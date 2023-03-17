@@ -1,21 +1,23 @@
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
+import { NavigationContainer, LogoContainer, NavLinks, NavLink } from './navigation.styles';
+
 const Navigation = () => {
     return (
         <Fragment>
-            <div className='nav-container'>
-                <Link to='/'>
+            <NavigationContainer>
+                <LogoContainer to='/'>
                     LOGO
-                </Link>
-            </div>
-            <div className='nav-links'>
-                <Link to='/shop'>SHOP</Link>
-                <Link to='/guide'>PUPPY GUIDE</Link>
-                <Link to='/about'>ABOUT US</Link>
-                <Link to='/contact'>CONTACT</Link>
-                <span>CART</span>
-            </div>
+                </LogoContainer>
+                <NavLinks>
+                    <NavLink to='/shop'>SHOP</NavLink>
+                    <NavLink to='/guide'>PUPPY GUIDE</NavLink>
+                    <NavLink to='/about'>ABOUT US</NavLink>
+                    <NavLink to='/contact'>CONTACT</NavLink>
+                    <span>CART</span>
+                </NavLinks>
+            </NavigationContainer>
             <Outlet />
         </Fragment>
     )

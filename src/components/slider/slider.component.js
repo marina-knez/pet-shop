@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import "./slider.styles.scss";
+import { SliderContainer, SliderItem, SliderItemLeft, SliderItemRight, SliderItemTextTitle, SliderItemTextSubtitle, SliderItemImage } from './slider.styles';
 
 const Slider = ({ data, children }) => {
 
@@ -26,7 +26,7 @@ const Slider = ({ data, children }) => {
     }, [index]);
 
     return (
-        <div className='slider-container'>
+        <SliderContainer>
             {data.map((item, indexItem) => {
                 let position = "--next-slide";
 
@@ -39,21 +39,20 @@ const Slider = ({ data, children }) => {
                 }
 
                 return (
-                    <div className={`slider-item ${position}`} key={item.id} index={item.index} data={item}>
-                        <section className='slider-item__left'>
-                            <h1 className='slider-item__text-title'>{item.title}</h1>
-                            <h2 className='slider-tiem__text-subtitle'>{item.subtitle}</h2>
+                    <SliderItem className={position} key={item.id} index={item.index} data={item}>
+                        <SliderItemLeft>
+                            <SliderItemTextTitle>{item.title}</SliderItemTextTitle>
+                            <SliderItemTextSubtitle>{item.subtitle}</SliderItemTextSubtitle>
                             {children}
-                        </section>
-                        <section className='slider-item__right'>
-                            <img src={item.imageUrl} alt={item.imageTitle} title={item.imageTitle} 
-                            className="slider-item__image"
+                        </SliderItemLeft>
+                        <SliderItemRight>
+                            <SliderItemImage src={item.imageUrl} alt={item.imageTitle} title={item.imageTitle}
                             />
-                        </section>
-                    </div>
+                        </SliderItemRight>
+                    </SliderItem>
                     )
             })}
-        </div>
+        </SliderContainer>
     )
 }
 
