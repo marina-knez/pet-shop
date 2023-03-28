@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import SliderDots from '../slider-dots/slider-dots.component';
+
 import { SliderContainer, SliderItem, SliderItemLeft, SliderItemRight, SliderItemTextTitle, SliderItemTextSubtitle, SliderItemImage } from './slider.styles';
 
 const Slider = ({ data, children }) => {
@@ -52,6 +54,7 @@ const Slider = ({ data, children }) => {
                     </SliderItem>
                     )
             })}
+            <SliderDots data={data} activeIndex={index} onDotClick={(index) => setIndex(index)} />
         </SliderContainer>
     )
 }
