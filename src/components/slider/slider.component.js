@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 
 import SliderDots from '../slider-dots/slider-dots.component';
+import SliderArrows from '../slider-arrows/slider-arrows.component';
 
 import { SliderContainer, SliderItem, SliderItemLeft, SliderItemRight, SliderItemTextTitle, SliderItemTextSubtitle, SliderItemImage } from './slider.styles';
 
-const Slider = ({ data, children }) => {
+const Slider = ({ data, children, showDots, showArrows }) => {
 
     const [ index, setIndex ] = useState(0);
 
@@ -27,8 +28,18 @@ const Slider = ({ data, children }) => {
         }
     }, [index]);
 
+    const onArrowClickLeft = () => {
+        setIndex(index - 1);
+    };
+
+    const onArrowClickRight = () => {
+        setIndex(index + 1);
+    };
+
     return (
         <SliderContainer>
+            {showArrows && <SliderArrows onArrowClickLeft={onArrowClickLeft} onArrowClickRight={onArrowClickRight} />}
+
             {data.map((item, indexItem) => {
                 let position = "--next-slide";
 
@@ -54,7 +65,8 @@ const Slider = ({ data, children }) => {
                     </SliderItem>
                     )
             })}
-            <SliderDots data={data} activeIndex={index} onDotClick={(index) => setIndex(index)} />
+
+            {showDots && <SliderDots data={data} activeIndex={index} onDotClick={setIndex} />}
         </SliderContainer>
     )
 }

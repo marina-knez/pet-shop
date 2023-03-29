@@ -17,6 +17,6 @@ export const Dot = styled.li`
     height: 1.5rem;
     margin: 0 0.5rem;
     border-radius: 50%;
-    background-color: ${({ active }) => (active ? '#ffffff' : '#9B9B9B')};
+    background-color: ${({ active }) => (active ? '#f2f0a1' : '#9B9B9B')};
     cursor: pointer;
 `;

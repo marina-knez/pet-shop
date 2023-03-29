@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import Slider from '../slider/slider.component';
@@ -41,9 +41,11 @@ const HeroSection = () => {
     const onNavigateHandler = () => navigate(data.route);
 
     return (
-        <Slider data={sliderData}>
-            <button onClick={onNavigateHandler} className="button">SHOP NOW</button>
-        </Slider>
+        <Fragment>
+            <Slider data={sliderData} showDots={true} showArrows={true}>
+                <button onClick={onNavigateHandler} className="button">SHOP NOW</button>
+            </Slider>
+        </Fragment>
     )
 }
 
