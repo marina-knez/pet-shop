@@ -1,17 +1,20 @@
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const SliderArrows= ({ onArrowClickLeft, onArrowClickRight }) => {
+import { HeroArrowContainer, ReviewsArrowContainer, Arrow, ArrowRight } from './slider-arrows.styles';
+
+const SliderArrows = ({ onArrowClickLeft, onArrowClickRight, hero }) => {
+    const Arrows = hero ? HeroArrowContainer : ReviewsArrowContainer;
+
     return (
-        <div>
-            <button className='button-arrow-left' onClick={onArrowClickLeft}>
+        <Arrows>
+            <Arrow onClick={onArrowClickLeft}>
                 <FontAwesomeIcon icon={faArrowLeft} />
-            </button>
-            <button className='button-arrow-right' onClick={onArrowClickRight}>
+            </Arrow>
+            <ArrowRight onClick={onArrowClickRight}>
                 <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-        </div>
+            </ArrowRight>
+        </Arrows>
     )
 }
 
