@@ -7,7 +7,7 @@ const ReviewsSlider = ({ data }) => {
     return (
         <Fragment>
             <SliderItemTop>
-                <Badge src='/assets/pet-badge.jpg' alt='pet-badge' />
+                <Badge src="/assets/pet-badge.jpg" alt="pet-badge" title="pet-badge" />
                 <SliderItemTextContainer>
                     <SliderItemTextTitle>{name}</SliderItemTextTitle>
                     <SliderItemTextSubtitle>{title}</SliderItemTextSubtitle>
