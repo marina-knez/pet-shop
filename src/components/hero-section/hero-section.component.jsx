@@ -1,9 +1,6 @@
-import { Fragment, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
 import Slider from '../slider/slider.component';
 
-import "./hero-section.styles.css";
+import { HeroSliderContainer } from './hero-section.styles';
 
 export const sliderData = [
     {
@@ -34,18 +31,11 @@ export const sliderData = [
 
 const HeroSection = () => {
 
-    const { data } = useState(sliderData);
-
-    const navigate = useNavigate();
-
-    const onNavigateHandler = () => navigate(data.route);
-
     return (
-        <Fragment>
-            <Slider data={sliderData} showDots={true} showArrows={true}>
-                <button onClick={onNavigateHandler} className="button">SHOP NOW</button>
+        <HeroSliderContainer>
+            <Slider data={sliderData} hero={true} showDots={true} showArrows={true}>
             </Slider>
-        </Fragment>
+        </HeroSliderContainer>
     )
 }
 

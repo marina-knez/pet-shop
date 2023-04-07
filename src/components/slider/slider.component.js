@@ -1,11 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 
 import SliderDots from '../slider-dots/slider-dots.component';
 import SliderArrows from '../slider-arrows/slider-arrows.component';
 
-import { SliderContainer, SliderItem, SliderItemLeft, SliderItemRight, SliderItemTextTitle, SliderItemTextSubtitle, SliderItemImage } from './slider.styles';
+import HeroSlider from '../hero-slider/hero-slider.component';
+import ReviewsSlider from '../reviews-slider/reviews-slider.component';
 
-const Slider = ({ data, children, showDots, showArrows }) => {
+import { HeroSliderItem } from '../hero-slider/hero-slider.styles';
+import { ReviewsSliderItem } from '../reviews-slider/reviews-slider.styles';
+
+const Slider = ({ data, hero, showDots, showArrows }) => {
 
     const [ index, setIndex ] = useState(0);
 
@@ -22,7 +26,7 @@ const Slider = ({ data, children, showDots, showArrows }) => {
     useEffect(() => {
         let slider = setInterval(() => {
             setIndex(index + 1)
-        }, 10000);
+        }, 8000);
         return () => {
             clearInterval(slider)
         }
@@ -36,9 +40,12 @@ const Slider = ({ data, children, showDots, showArrows }) => {
         setIndex(index + 1);
     };
 
+    
+    const SliderItem = hero ? HeroSliderItem : ReviewsSliderItem;
+
     return (
-        <SliderContainer>
-            {showArrows && <SliderArrows onArrowClickLeft={onArrowClickLeft} onArrowClickRight={onArrowClickRight} />}
+        <Fragment>
+            {showArrows && <SliderArrows onArrowClickLeft={onArrowClickLeft} onArrowClickRight={onArrowClickRight} hero={hero} />}
 
             {data.map((item, indexItem) => {
                 let position = "--next-slide";
@@ -53,21 +60,15 @@ const Slider = ({ data, children, showDots, showArrows }) => {
 
                 return (
                     <SliderItem className={position} key={item.id} index={item.index} data={item}>
-                        <SliderItemLeft>
-                            <SliderItemTextTitle>{item.title}</SliderItemTextTitle>
-                            <SliderItemTextSubtitle>{item.subtitle}</SliderItemTextSubtitle>
-                            {children}
-                        </SliderItemLeft>
-                        <SliderItemRight>
-                            <SliderItemImage src={item.imageUrl} alt={item.imageTitle} title={item.imageTitle}
-                            />
-                        </SliderItemRight>
+                        {
+                            hero ?  <HeroSlider data={item} /> : <ReviewsSlider data={item} />
+                        }
                     </SliderItem>
                     )
             })}
 
             {showDots && <SliderDots data={data} activeIndex={index} onDotClick={setIndex} />}
-        </SliderContainer>
+        </Fragment>
     )
 }
 
