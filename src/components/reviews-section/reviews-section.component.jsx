@@ -16,12 +16,6 @@ export const reviews = [
         quote: "Nothing to say about it. The staff is kind, always asking if assistance is needed, constantly working, and providing excellent service. The store is equipped with various merchandise, lots of items, and everything is easily visible. All praise!"
     },
     {
-        id: 3,
-        name: "Dina H.",
-        title: "Cat lover",
-        quote: "Large, well-equipped store. It even has cat pheromones, which not everyone carries. The staff is friendly, ready to help and answer questions."
-    },
-    {
         id: 4,
         name: "Amalia H.",
         title: "Dog lover",
@@ -44,12 +38,6 @@ export const reviews = [
         name: "Mateja K.",
         title: "Dog lover",
         quote: "Kind employee, showed and guided us through everything! We received excellent advice and even had a little lecture about the animal world!"
-    },
-    {
-        id: 8,
-        name: "Mirko B.",
-        title: "Cat lover",
-        quote: "I would like to praise the employee Denis from the branch in Osijek for exceptional kindness, helpfulness, friendly approach, and expertise regarding cat food and products!"
     }
 ]
 
