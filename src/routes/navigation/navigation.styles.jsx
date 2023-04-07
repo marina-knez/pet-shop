@@ -2,18 +2,23 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavigationContainer = styled.div`
-    height: 70px;
+    height: 100px;
     width: 100%;
     
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
 `
 
 export const LogoContainer = styled(Link)`
     height: 100%;
-    width: 70px;
-    padding: 25px;
+    width: 250px;
+    padding: 15px 0 0 25px;
+
+    & svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
 `
 
 export const NavLinks = styled.div`
@@ -26,6 +31,12 @@ export const NavLinks = styled.div`
 `
 
 export const NavLink = styled(Link)`
-    padding: 10px 15px;
+    padding: 25px 15px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+`
+
+export const CartIcon = styled.span`
+    padding: 25px 15px 10px;
     cursor: pointer;
 `
