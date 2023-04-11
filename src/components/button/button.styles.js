@@ -21,13 +21,19 @@ export const BaseButton = styled.button`
     transition: all .3s linear;
 
     &:hover {
-        background-color: black;
+        background-color: grey;
         color: #f2ea00;
-        border: 1px solid black;
+        border: 1px solid grey;
     }
 `
 
 export const InvertedButton = styled(BaseButton)`
-    background-color: black;
+    background-color: grey;
     color: #f2ea00;
+
+    &:hover {
+        background-color: #f2ea00;
+        color: grey;
+        border: 1px solid #f2ea00;
+    }
 `
