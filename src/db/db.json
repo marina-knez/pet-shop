@@ -1,6 +1,7 @@
-{
-    "dogs": {
-        "food": [
+[{
+    
+    "categoryTitle": "food", 
+    "items": [
             {
                 "id": 1,
                 "title": "Brit Premium by Nature Junior Small Breed",
@@ -111,8 +112,11 @@
                 "ingredients": "Žitarice, meso i prerađevine životinjskog podrijetla (8%*), ekstrakti biljnih bjelančevina, ulja i masti, prerađevine biljnog podrijetla , povrće (sušeni korijen cikorije 1,1%), minerali. *jednako je 16% rehidriranog mesa i prerađevina životinjskog podrijetla: najmanje 4% piletine. Dodaci po kg: Vit. A: 21 000; Vit. D3: 1 200; Vit. E: 100; mg/kg: Vit. B skupine: 83,5; Fe (E1): 266; I (E2): 3,3; Cu (E4): 38; Mn (E5): 20,3; Zn (E6): 429; Se (E8): 0,47. Tehnološki dodaci: Antioksidansima..",
                 "content": "Bjelančevine 25%, sadržaj masti 12%, sirovi pepeo 8%, sirova vlakna 3%."
             }
-        ],
-        "bowls": [
+        ]
+    },
+    {
+        "categoryTitle": "bowls",
+        "items": [
             {
                 "id": 1,
                 "title": "Trixie posuda za pse keramička s gumenim rubom 0,4 l/fi-12 cm siva",
@@ -193,8 +197,10 @@
                 "brand": "Trixie",
                 "price": "42,47 €"
             }
-        ],
-        "beds": [
+        ]},
+        {
+        "categoryTitle": "beds",
+        "items": [
             {
                 "id": 1,
                 "title": "Trixie krevet za pse Lona 60x50 cm rozo/sivi",
@@ -285,8 +291,10 @@
                 "description": "Mekani pliš. Pokrivka od poliestera. Punjenje od poliestera. Pranje isključivo ručno.",
                 "price": "33,97 €"
             }
-        ],
-        "toys": [
+        ]},
+        {
+        "categoryTitle": "toys",
+        "items": [
             {
                 "id": 1,
                 "title": "Trixie igračka za pse božićna sob tkanina 42 cm smeđi/sivi, 1 komad",
@@ -377,8 +385,10 @@
                 "description": "Kong igračke izrađene su od izdržljive prirodne gume. Zbog svoje kvalitete preporuka su veterinara i trenera pasa diljem svijeta.",
                 "price": "33,18 €"
             }
-        ],
-        "hygiene": [
+        ]},
+        {
+        "categoryTitle": "hygiene",
+        "items": [
             {
                 "id": 1,
                 "title": "Trixie ručnik za pse i mačke 50x60 cm sivi",
@@ -471,4 +481,4 @@
             }
         ]
     }
-}
+]
