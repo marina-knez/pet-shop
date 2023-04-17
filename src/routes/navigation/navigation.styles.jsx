@@ -36,7 +36,3 @@ export const NavLink = styled(Link)`
     font-size: 1.2rem;
 `
 
-export const CartIcon = styled.span`
-    padding: 25px 15px 10px;
-    cursor: pointer;
-`
