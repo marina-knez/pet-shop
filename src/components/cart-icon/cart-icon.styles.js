@@ -12,5 +12,7 @@ export const ItemCount = styled.span`
     text-align: center;
     background-color: #f2ea00;
     border-radius: 50%;
-    width: 26px;
+    width: 20px;
+    height: 20px;
+    font-size: .7rem;
 `

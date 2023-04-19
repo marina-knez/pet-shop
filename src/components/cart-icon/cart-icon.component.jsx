@@ -7,14 +7,14 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { CartIconContainer, ItemCount } from './cart-icon.styles';
 
 const CartIcon = () => {
-    const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+    const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
 
     const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
 
     return (
         <CartIconContainer onClick={toggleIsCartOpen}>
             <FontAwesomeIcon icon={faCartShopping} />
-            <ItemCount>0</ItemCount>
+            <ItemCount>{cartCount}</ItemCount>
         </CartIconContainer>
     )
 }
