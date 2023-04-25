@@ -1,6 +1,7 @@
-[{
-    
-    "categoryTitle": "food", 
+ {
+    "dogs": [
+    {
+    "categoryName": "food",
     "items": [
             {
                 "id": 1,
@@ -115,8 +116,8 @@
         ]
     },
     {
-        "categoryTitle": "bowls",
-        "items": [
+        "categoryName": "bowls",
+        "items":  [
             {
                 "id": 1,
                 "title": "Trixie posuda za pse keramička s gumenim rubom 0,4 l/fi-12 cm siva",
@@ -197,9 +198,10 @@
                 "brand": "Trixie",
                 "price": 42.47
             }
-        ]},
-        {
-        "categoryTitle": "beds",
+        ]
+    },
+    {
+        "categoryName": "beds",
         "items": [
             {
                 "id": 1,
@@ -291,9 +293,10 @@
                 "description": "Mekani pliš. Pokrivka od poliestera. Punjenje od poliestera. Pranje isključivo ručno.",
                 "price": 33.97
             }
-        ]},
-        {
-        "categoryTitle": "toys",
+        ]
+    },
+    {
+        "categoryName": "toys",
         "items": [
             {
                 "id": 1,
@@ -385,9 +388,10 @@
                 "description": "Kong igračke izrađene su od izdržljive prirodne gume. Zbog svoje kvalitete preporuka su veterinara i trenera pasa diljem svijeta.",
                 "price": 33.18
             }
-        ]},
-        {
-        "categoryTitle": "hygiene",
+        ]
+    },
+    {
+        "categoryName": "hygiene",
         "items": [
             {
                 "id": 1,
@@ -480,5 +484,5 @@
                 "price": 7.70
             }
         ]
-    }
-]
+    }]
+}
