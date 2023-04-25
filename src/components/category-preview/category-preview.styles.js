@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 export const CategoryPreviewContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 `
 
 export const CategoryPreviewTitle = styled(Link)`
-    font-size: 28px;
-    margin-bottom: 25px;
+    font-size: 2.5rem;
+    margin-left: 50px;
     cursor: pointer;
 `
 
