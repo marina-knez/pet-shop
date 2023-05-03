@@ -7,7 +7,6 @@ import { selectCategories } from '../../store/categories/category.selector';
 
 const CategoriesPreview = () => {
     const categories = useSelector(selectCategories);
-    console.log(categories)
 
     return (
         <Fragment>
