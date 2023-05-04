@@ -6,7 +6,7 @@ import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import CartItem from "../cart-item/cart-item.component";
 
-import { CartDropdownContainer, CartItems } from './cart-dropdown.styles';
+import { CartDropdownContainer, CartItems, EmptyMessage } from './cart-dropdown.styles';
 
 const CartDropdown = () => {
     const cartItems = useSelector(selectCartItems);
@@ -20,9 +20,13 @@ const CartDropdown = () => {
         <CartDropdownContainer>
             <CartItems>
                 {
-                    cartItems.map(item => (
-                        <CartItem key={item.id} cartItem={item} />
-                    ))
+                    cartItems.length ? (
+                        cartItems.map(item =>
+                            <CartItem key={item.id} cartItem={item} />
+                        )
+                    ) : (
+                        <EmptyMessage>Your cart is empty</EmptyMessage>
+                    )
                 }
             </CartItems>
             <Button buttonType={BUTTON_TYPE_CLASSES.inverted} className="button" onClick={goToCheckoutHandler}>CHECKOUT</Button>
