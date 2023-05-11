@@ -18,7 +18,7 @@ const Category = () => {
     const categoryData = categories.filter((cat) => cat.categoryName === category)[0];
     setProducts(categoryData ? categoryData.items : [])
   }, [category, categories])
-
+  
   return (
     <Fragment>
         <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
@@ -28,7 +28,7 @@ const Category = () => {
           ) : (
             <CategoryContainer>
               {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <ProductCard key={product.id} product={product} category={category} />
               ))}
             </CategoryContainer>
           )
