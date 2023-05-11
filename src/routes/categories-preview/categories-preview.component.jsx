@@ -18,7 +18,7 @@ const CategoriesPreview = () => {
                 categories.map(category => {
                     const products = category.items;
                     return (
-                        <CategoryPreview key={category.categoryName} title={category.categoryName} products={products} />
+                        <CategoryPreview key={category.categoryName} title={category.categoryName} products={products} category={category} />
                     )
                 })
             )}
