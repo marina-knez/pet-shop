@@ -6,7 +6,7 @@ export const BaseButton = styled.button`
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
-    padding: 0 35px 0 35px;
+    padding: 0 35px;
     font-size: 1.5rem;
     background-color: #f2ea00;
     color: black;
@@ -36,4 +36,10 @@ export const InvertedButton = styled(BaseButton)`
         color: grey;
         border: 1px solid #f2ea00;
     }
+`
+
+export const BaseButtonLarge = styled(BaseButton)`
+    height: 70px;
+    padding: 10px 90px;
+    font-size: 1.7rem;
 `
