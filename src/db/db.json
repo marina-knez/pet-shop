@@ -119,7 +119,7 @@
         "categoryName": "bowls",
         "items":  [
             {
-                "id": 1,
+                "id": 11,
                 "title": "Trixie posuda za pse keramička s gumenim rubom 0,4 l/fi-12 cm siva",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/x/tx24360_trixie_kerami_ka_s_gumenim_rubom_0_4_lfi-12_cm_siva_1_.jpg",
                 "productCode": "TX24360",
@@ -127,7 +127,7 @@
                 "price": 8.63
             },
             {
-                "id": 2,
+                "id": 12,
                 "title": "Trixie posuda za pse keramička smeđa s uzorkom šapa, 0,3 l",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_posuda_kerami_ka_sme_a_uzorak__ape_0_3l.jpg",
                 "productCode": "TX24531",
@@ -135,7 +135,7 @@
                 "price": 6.24
             },
             {
-                "id": 3,
+                "id": 13,
                 "title": "Trixie posuda za pse plastična lagana 0,5 l/fi-14 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_posuda_plasti_na_lagana_crna_1.jpg",
                 "productCode": "TX2473",
@@ -143,7 +143,7 @@
                 "price": 2.39
             },
             {
-                "id": 4,
+                "id": 14,
                 "title": "Trixie posuda metalna 1,8 l/fi-20 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/x/tx24843_trixie_posuda_metalna_1_8_l.jpg",
                 "productCode": "TX24843",
@@ -151,7 +151,7 @@
                 "price": 3.78
             },
             {
-                "id": 5,
+                "id": 15,
                 "title": "Trixie posuda za pse keramička 1,6 l/fi-20 cm bijela",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/x/tx25025_trixie_posuda_kerami_ka_1_6_lfi-20_cm_bijela.jpg",
                 "productCode": "TX25025",
@@ -159,7 +159,7 @@
                 "price": 13.27
             },
             {
-                "id": 6,
+                "id": 16,
                 "title": "Trixie posuda za pse keramička Pet's Home 0,8 l/fi-16 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_posuda_kerami_ka__pet_s_home_plava.jpg",
                 "productCode": "TX25051",
@@ -167,7 +167,7 @@
                 "price": 8.10
             },
             {
-                "id": 7,
+                "id": 17,
                 "title": "Trixie posuda za pse keramička Pet's Home 0,3 l/fi-12 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/x/tx25053_trixie_posuda_pets_home.jpg",
                 "productCode": "TX25053",
@@ -175,7 +175,7 @@
                 "price": 5.97
             },
             {
-                "id": 8,
+                "id": 18,
                 "title": "Trixie posuda za pse keramička Junior 0,8 l/fi-16 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_posuda_kerami_ka_kerami_ka_junior_ljubi_asta_1.jpg",
                 "productCode": "TX25127",
@@ -183,7 +183,7 @@
                 "price": 9.29
             },
             {
-                "id": 9,
+                "id": 19,
                 "title": "Trixie posude na drvenom postolju 2x0,45 l/fi-12 cm,36x7x19",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_posude_na_drvenom_postolju_2x0_45_lfi-12_cm_36x7x19.jpg",
                 "productCode": "TX24357",
@@ -191,7 +191,7 @@
                 "price": 23.23
             },
             {
-                "id": 10,
+                "id": 20,
                 "title": "Trixie stalak za pse s dvije čelične posude 2,8 l",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_stalak_s_dvije__eli_ne_posude_2_8_l_.jpg",
                 "productCode": "TX24922",
@@ -204,7 +204,7 @@
         "categoryName": "beds",
         "items": [
             {
-                "id": 1,
+                "id": 21,
                 "title": "Trixie krevet za pse Lona 60x50 cm rozo/sivi",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_krevet_lona_60x50_cm_rozo_sivi.jpg",
                 "productCode": "TX37656",
@@ -213,7 +213,7 @@
                 "price": 59.45
             },
             {
-                "id": 2,
+                "id": 22,
                 "title": "Trixie ležaj za pse Gino 70x45 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_lezaj_gino_70x45_cm.jpg",
                 "productCode": "TX37592",
@@ -222,7 +222,7 @@
                 "price": 29.72
             },
             {
-                "id": 3,
+                "id": 23,
                 "title": "Trixie ležaj za pse Tammy fi 50",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_lezaj_tammy_fi_50.jpg",
                 "productCode": "TX37377",
@@ -231,7 +231,7 @@
                 "price": 21.23
             },
             {
-                "id": 4,
+                "id": 24,
                 "title": "Trixie ležaj Harvey fi-60 cm bijelo-crni",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_le_aj_harvey_fi-60_cm_bijelo-crni.jpg",
                 "productCode": "TX37319",
@@ -240,7 +240,7 @@
                 "price": 50.96
             },
             {
-                "id": 5,
+                "id": 25,
                 "title": "Trixie ležaj za pse Junior zeko fi-40 cm svjetlosiva/lila",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_le_aj_junior_zeko_fi-40_cm_svij.siva_lila.jpg",
                 "productCode": "TX38252",
@@ -249,7 +249,7 @@
                 "price": 16.99
             },
             {
-                "id": 6,
+                "id": 26,
                 "title": "Trixie jastuk za pse Harvey 140x90 cm bijelo/crni",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_jastuk_harvey_120x80_cm_bijelo_crni_3.jpg",
                 "productCode": "TX38011",
@@ -258,7 +258,7 @@
                 "price": 100.87
             },
             {
-                "id": 7,
+                "id": 27,
                 "title": "Ferplast ležaj za pse Dandy 45 pamuk",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/f/e/ferplast_le_aj_dandy_1.jpg",
                 "productCode": "F82941099",
@@ -267,7 +267,7 @@
                 "price": 19.11
             },
             {
-                "id": 8,
+                "id": 28,
                 "title": "Ferplast ležaj za pse Tommy 65 smeđi",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/f/e/ferplast_le_aj_tommy_sme_i.jpg",
                 "productCode": "F83765012",
@@ -276,7 +276,7 @@
                 "price": 45.65
             },
             {
-                "id": 9,
+                "id": 29,
                 "title": "Hudog jastuk za pse s jastukom letters S",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/h/u/hudp-com2-l_1.jpg",
                 "productCode": "HUDP-COM2-S",
@@ -285,7 +285,7 @@
                 "price": 42.47
             },
             {
-                "id": 10,
+                "id": 30,
                 "title": "Trixie ležaj za pse Tammy fi 70",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_lezaj_tammy_fi_70.jpg",
                 "productCode": "TX37378",
@@ -299,7 +299,7 @@
         "categoryName": "toys",
         "items": [
             {
-                "id": 1,
+                "id": 31,
                 "title": "Trixie igračka za pse božićna sob tkanina 42 cm smeđi/sivi, 1 komad",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_igra_ka_sob_tkanina.jpg",
                 "productCode": "TX92501",
@@ -308,7 +308,7 @@
                 "price": 11.68
             },
             {
-                "id": 2,
+                "id": 32,
                 "title": "Trixie igračka za pse Activity Chess 40x27 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_activity_chess_40x27_cm.jpg",
                 "productCode": "TX32022",
@@ -317,7 +317,7 @@
                 "price": 23.89
             },
             {
-                "id": 3,
+                "id": 33,
                 "title": "Trixie igračka za pse Activity Snack roll 14 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_activity_snack_roll_14_cm.jpg",
                 "productCode": "TX32020",
@@ -326,7 +326,7 @@
                 "price": 4.91
             },
             {
-                "id": 4,
+                "id": 34,
                 "title": "Trixie igračka za pse prsten s tenis lopticom fi-18 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_igra_ka_prsten_s_tenis_lopticom_fi-18_cm_crvena.jpg",
                 "productCode": "TX3266",
@@ -335,7 +335,7 @@
                 "price": 3.32
             },
             {
-                "id": 5,
+                "id": 35,
                 "title": "Trixie igračka za pse Dentafun gumena kost mintfresh 11 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_igra_ka_dentafun_gumena_kost_mintfresh_11_cm.jpg",
                 "productCode": "TX32943",
@@ -344,7 +344,7 @@
                 "price": 7.83
             },
             {
-                "id": 6,
+                "id": 36,
                 "title": "Trixie igračka za pse jutena rola za zagriz 25 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_igra_ka_jutena_rola_za_zagriz_25_cm.jpg",
                 "productCode": "TX3295",
@@ -353,7 +353,7 @@
                 "price": 6.64
             },
             {
-                "id": 7,
+                "id": 37,
                 "title": "Trixie igračka Lick`n`Snack pladanj TPR/PP 20x20 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_igracka_lick_n_snack_pladanj_tpr-pp_20x20_cm.jpg",
                 "productCode": "TX34952",
@@ -362,7 +362,7 @@
                 "price": 10.35
             },
             {
-                "id": 8,
+                "id": 38,
                 "title": "Trixie igračka za pse Latex Pig koji rokče 23 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_igra_ka_latex_pig_rok_e_23_cm.jpg",
                 "productCode": "TX3537",
@@ -371,7 +371,7 @@
                 "price": 6.50
             },
             {
-                "id": 9,
+                "id": 39,
                 "title": "Trixie igračka za pse Pliš 4 figure 17 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_igra_ka_4_figure_17_cm_pas.jpg",
                 "productCode": "TX3582",
@@ -380,7 +380,7 @@
                 "price": 6.50
             },
             {
-                "id": 10,
+                "id": 40,
                 "title": "Kong igračka za pse Classic XX-Large",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/k/g/kgkke_kong_classic_xx-large.jpg",
                 "productCode": "KGKKE",
@@ -394,7 +394,7 @@
         "categoryName": "hygiene",
         "items": [
             {
-                "id": 1,
+                "id": 41,
                 "title": "Trixie ručnik za pse i mačke 50x60 cm sivi",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_ru_nik_za_pse_i_ma_ke_50x60_cm_plavi.jpg",
                 "productCode": "TX2350",
@@ -403,7 +403,7 @@
                 "price": 8.49
             },
             {
-                "id": 2,
+                "id": 42,
                 "title": "Trixie zaštitna krema za šape psa pčelinji vosak, 50 ml",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/x/tx2571.jpg",
                 "productCode": "TX2571",
@@ -412,7 +412,7 @@
                 "price": 3.85
             },
             {
-                "id": 3,
+                "id": 43,
                 "title": "Trixie kozmetičke maramice na prst, za uši 50 kom",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_kozmeti_ke_maramice_na_prst_za_u_i_50_kom.jpg",
                 "productCode": "TX29392",
@@ -421,7 +421,7 @@
                 "price": 9.16
             },
             {
-                "id": 4,
+                "id": 44,
                 "title": "Trixie Dental set pasta/četkica/navlaka za prst",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/x/tx2561.jpg",
                 "productCode": "TX2561",
@@ -430,7 +430,7 @@
                 "price": 6.11
             },
             {
-                "id": 5,
+                "id": 45,
                 "title": "Trixie četka Instyle drvena drška jednostrana 18x10 cm",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_etka_instyle_drvena_dr_ka_jednostrana_18x10_cm.jpg",
                 "productCode": "TX2300",
@@ -439,7 +439,7 @@
                 "price": 4.38
             },
             {
-                "id": 6,
+                "id": 46,
                 "title": "Trixie šampon za pse za bijelo/svijetlo krzno 250 ml",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie__ampon_za_pse_bijelo_krzno.jpg",
                 "productCode": "TX2914",
@@ -448,7 +448,7 @@
                 "price": 3.78
             },
             {
-                "id": 7,
+                "id": 47,
                 "title": "Trixie regenerator za pse Jojoba, 250 ml",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/tr_regenerator_jojoba_250_ml.jpg",
                 "productCode": "TX29193",
@@ -457,7 +457,7 @@
                 "price": 4.11
             },
             {
-                "id": 8,
+                "id": 48,
                 "title": "Trixie sprej za raščešljavanje pasa 175 ml",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/t/r/trixie_sprej_za_ra_e_ljavanje_175_ml_.jpg",
                 "productCode": "TX2930",
@@ -466,7 +466,7 @@
                 "price": 4.78
             },
             {
-                "id": 9,
+                "id": 49,
                 "title": "Ferplast kliješta za nokte, za pse",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/f/e/ferplast_klije_ta_za_nokte_small.jpg",
                 "productCode": "F85986899",
@@ -475,7 +475,7 @@
                 "price": 12.00
             },
             {
-                "id": 10,
+                "id": 50,
                 "title": "Inodorina šampon za suho pranje Mousse Talcum, 300 ml",
                 "imageUrl": "https://www.zoocity.hr/media/catalog/product/cache/3e64ba88bd29473e14083a708e79c587/i/n/in1013.jpg",
                 "productCode": "IN1012",
