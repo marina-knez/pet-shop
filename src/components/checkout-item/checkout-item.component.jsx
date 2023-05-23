@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
-import { addItemToCart, removeItemFromCart, clearItemFromCart } from "../../store/cart/cart.action";
+import { incrementItemInCart, decrementItemInCart, clearItemFromCart } from "../../store/cart/cart.action";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -12,10 +12,11 @@ const CheckoutItem = ({cartItem}) => {
     const dispatch = useDispatch();
     const cartItems = useSelector(selectCartItems);
 
-    const { title, imageUrl, quantity, price } = cartItem;
+    const { title, imageUrl, price } = cartItem;
+    const quantity = cartItem.quantity;
 
-    const addItemHandler = () => dispatch(addItemToCart(cartItems, cartItem));
-    const removeItemHandler = () => dispatch(removeItemFromCart(cartItems, cartItem));
+    const incrementItemHandler = () => dispatch(incrementItemInCart(cartItems, cartItem));
+    const decrementItemHandler = () => dispatch(decrementItemInCart(cartItems, cartItem));
     const clearItemHandler = () => dispatch(clearItemFromCart(cartItems, cartItem));
 
     return (
@@ -25,11 +26,11 @@ const CheckoutItem = ({cartItem}) => {
             </ImageContainer>
             <ItemDetails>{title}</ItemDetails>
             <ItemQuantity>
-                <span onClick={removeItemHandler}>
+                <span onClick={decrementItemHandler}>
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </span>
                 <span>{quantity}</span>
-                <span onClick={addItemHandler}>
+                <span onClick={incrementItemHandler}>
                     <FontAwesomeIcon icon={faChevronRight} />
                 </span>
             </ItemQuantity>
