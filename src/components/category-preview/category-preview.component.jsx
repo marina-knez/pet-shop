@@ -2,7 +2,7 @@ import ProductCard from "../product-card/product-card.component";
 
 import { CategoryPreviewContainer, CategoryPreviewTitle, Preview } from "./category-preview.styles";
 
-const CategoryPreview = ({ title, products, category }) => {
+const CategoryPreview = ({ title, products }) => {
 
     return (
         <CategoryPreviewContainer>
@@ -13,9 +13,9 @@ const CategoryPreview = ({ title, products, category }) => {
                 {
                     products
                         .filter((_, idx) => idx < 4)
-                        .map(product => (
+                        .map(product => 
                             <ProductCard key={product.id} product={product} category={title} />
-                        ))
+                        )
                 }
             </Preview>
         </CategoryPreviewContainer>
