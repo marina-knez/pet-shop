@@ -11,7 +11,6 @@ import { CartDropdownContainer, CartItems, EmptyMessage } from './cart-dropdown.
 const CartDropdown = () => {
     const cartItems = useSelector(selectCartItems);
     const navigate = useNavigate();
-
     const goToCheckoutHandler = () => {
         navigate('/checkout')
     };
@@ -21,7 +20,7 @@ const CartDropdown = () => {
             <CartItems>
                 {
                     cartItems.length ? (
-                        cartItems.map(item =>
+                        cartItems.map(item => 
                             <CartItem key={item.id} cartItem={item} />
                         )
                     ) : (
