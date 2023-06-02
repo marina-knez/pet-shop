@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import { ThunkDispatch } from 'redux-thunk';
+import { AnyAction } from 'redux';
 
 import CategoriesPreview from '../categories-preview/categories-preview.component';
 import Category from '../category/category.component';
@@ -9,7 +11,7 @@ import ProductDetails from '../../components/product-details/product-details.com
 
 
 const Shop = () => {
-    const dispatch = useDispatch();
+    const dispatch: ThunkDispatch<any, any, AnyAction> = useDispatch();
 
     useEffect(() => {
         dispatch(fetchCategoriesAsync());

@@ -17,14 +17,14 @@ export const cartReducer = (state = CART_INITIAL_STATE, action: AnyAction): Cart
     if(setCartItems.match(action)) {
         return {
             ...state,
-            cartItems: action.paload
+            cartItems: action.payload
         };
     }
 
     if(setIsCartOpen.match(action)) {
         return {
             ...state,
-            isCartOpen: action.paload
+            isCartOpen: action.payload
         };
     }
 

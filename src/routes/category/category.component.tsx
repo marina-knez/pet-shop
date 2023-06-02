@@ -7,12 +7,13 @@ import ProductCard from "../../components/product-card/product-card.component";
 import Spinner from '../../components/spinner/spinner.component';
 
 import { CategoryContainer, CategoryTitle } from "./category.styles";
+import { CategoryItem } from "../../store/categories/category.types";
 
 const Category = () => {
   const { category } = useParams();
   const categories = useSelector(selectCategories);
   const isLoading = useSelector(selectCategoriesIsLoading);
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<CategoryItem[]>([]);
   
   useEffect(() => {
     const categoryData = categories.filter((cat) => cat.categoryName === category)[0];
@@ -21,14 +22,14 @@ const Category = () => {
   
   return (
     <Fragment>
-        <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
+        <CategoryTitle>{(category as string).toUpperCase()}</CategoryTitle>
         {
           isLoading ? (
             <Spinner />
           ) : (
             <CategoryContainer>
               {products.map((product) => (
-                <ProductCard key={product.id} product={product} category={category} />
+                <ProductCard key={product.id} product={product} category={category as string} />
               ))}
             </CategoryContainer>
           )

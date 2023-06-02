@@ -4,5 +4,5 @@ export const getCategories = async (): Promise<Category[]> => {
     const categoriesArray = await fetch('http://localhost:4000/dogs')
     .then(res => res.json());
 
-    return categoriesArray;
+    return categoriesArray as Category[];
 }

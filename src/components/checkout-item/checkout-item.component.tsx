@@ -8,12 +8,24 @@ import { faChevronLeft, faChevronRight, faXmark } from '@fortawesome/free-solid-
 
 import { CheckoutItemContainer, ImageContainer, ItemDetails, ItemQuantity, RemoveButton } from "./checkout-item.styles";
 
-const CheckoutItem = ({cartItem}) => {
+export type CartItemData = {
+    id: number;
+    title: string;
+    imageUrl: string;
+    productCode: string;
+    description: string;
+    size: string;
+    price: number;
+    ingredients: string;
+    content: string;
+    quantity: number;
+};
+
+const CheckoutItem = ({cartItem}: { cartItem: CartItemData}) => {
     const dispatch = useDispatch();
     const cartItems = useSelector(selectCartItems);
 
-    const { title, imageUrl, price } = cartItem;
-    const quantity = cartItem.quantity;
+    const { title, imageUrl, price, quantity } = cartItem;
 
     const incrementItemHandler = () => dispatch(incrementItemInCart(cartItems, cartItem));
     const decrementItemHandler = () => dispatch(decrementItemInCart(cartItems, cartItem));

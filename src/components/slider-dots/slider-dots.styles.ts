@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+type DotProps = {
+    active: boolean;
+  };
+
 export const DotsContainer = styled.ul`
     position: absolute;
     bottom: 1rem;
@@ -12,7 +16,7 @@ export const DotsContainer = styled.ul`
     list-style: none;
 `;
 
-export const Dot = styled.li`
+export const Dot = styled.li<DotProps>`
     width: 1.5rem;
     height: 1.5rem;
     margin: 0 0.5rem;

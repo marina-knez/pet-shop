@@ -2,7 +2,16 @@ import Slider from '../slider/slider.component';
 
 import { HeroSliderContainer } from './hero-section.styles';
 
-export const sliderData = [
+export type HeroSliderData = {
+    id: number;
+    title: string;
+    subtitle: string;
+    imageUrl: string;
+    imageTitle: string;
+    route: string;
+};
+
+export const sliderData: HeroSliderData[] = [
     {
         id: 1,
         title: "You went and got yourself a dog, didn't You?",
@@ -33,8 +42,7 @@ const HeroSection = () => {
 
     return (
         <HeroSliderContainer>
-            <Slider data={sliderData} hero={true} showDots={true} showArrows={true}>
-            </Slider>
+            <Slider data={sliderData} hero={true} showDots={true} showArrows={true} />
         </HeroSliderContainer>
     )
 }

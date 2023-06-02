@@ -3,7 +3,13 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import { HeroArrowContainer, ReviewsArrowContainer, Arrow, ArrowRight } from './slider-arrows.styles';
 
-const SliderArrows = ({ onArrowClickLeft, onArrowClickRight, hero }) => {
+type SliderArrowsProps = {
+    onArrowClickLeft: () => void;
+    onArrowClickRight: () => void;
+    hero: boolean;
+  };
+
+const SliderArrows = ({ onArrowClickLeft, onArrowClickRight, hero }: SliderArrowsProps) => {
     const Arrows = hero ? HeroArrowContainer : ReviewsArrowContainer;
 
     return (

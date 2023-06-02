@@ -1,7 +1,7 @@
 import { createAction, Action, ActionWithPayload, withMatcher } from "../../utilities/reducer/reducer.utilities";
 import { PRODUCT_ACTION_TYPES, ProductItem, Quantity } from "./product.types";
 import { Category } from "../categories/category.types";
-import { ThunkAction, ThunkDispatch } from 'redux-thunk';
+import { ThunkAction } from 'redux-thunk';
 import { RootState } from "../store";
 import { AnyAction } from "redux";
 
@@ -23,19 +23,22 @@ export const getProductToView = (id: number, category: string): ThunkAction<
 > => async (dispatch, getState) => {
   try {
     const categories = getState().categories.categories;
-    const categoryData: Category | undefined = categories.find((cat: Category) => cat.categoryName === category);
+    const categoryData = categories.find((cat: Category) => cat.categoryName === category);
+    console.log('CATEGORIES: ', categories)
+    console.log('CATEGORY DATA: ', categoryData)
 
     if (!categoryData) {
       throw new Error(`Category '${category}' not found.`);
     }
 
-    const productData: ProductItem | undefined = categoryData.items.find((product: ProductItem) => product.id === id);
+    const productData = categoryData.items.find((product: ProductItem) => product.id === id);
 
     if (!productData) {
       throw new Error(`Product with ID '${id}' not found in category '${category}'.`);
     }
 
     dispatch(setProductItem(productData));
+    console.log(productData)
     dispatch(resetProductQuantity());
   } catch (error) {
     console.error(error);
@@ -43,28 +46,43 @@ export const getProductToView = (id: number, category: string): ThunkAction<
 };
 
 
-
 export const setProductQuantity = withMatcher((quantity: Quantity): SetProductQuantity => {
   return createAction(PRODUCT_ACTION_TYPES.SET_PRODUCT_QUANTITY, quantity);
 });
 
-export const decreaseQuantity = (): ThunkAction<void, RootState, unknown, AnyAction> => (
-  dispatch: ThunkDispatch<RootState, unknown, AnyAction>, 
-  getState: () => RootState
-    ) => {
+export const decreaseQuantity = (): ThunkAction<void, RootState, unknown, AnyAction> => (dispatch, getState) => {
   const quantity = getState().product.quantity;
+  console.log(quantity)
   if (quantity > 1) {
     dispatch(setProductQuantity(quantity - 1));
   }
 };
 
-export const increaseQuantity = (): ThunkAction<void, RootState, unknown, AnyAction> => (
-  dispatch: ThunkDispatch<RootState, unknown, AnyAction>, 
-  getState: () => RootState
-  ) => {
+export const increaseQuantity = (): ThunkAction<void, RootState, unknown, SetProductQuantity> => (dispatch, getState) => {
   const quantity = getState().product.quantity;
   dispatch(setProductQuantity(quantity + 1));
 };
 
 export const resetProductQuantity = withMatcher((): ResetProductQuantity =>
   createAction(PRODUCT_ACTION_TYPES.RESET_PRODUCT_QUANTITY));
+
+
+
+ /* 
+
+
+export const decreaseQuantity = (): ThunkAction<void, RootState, unknown, SetProductQuantity> => (
+  dispatch,
+  getState
+) => {
+  // Your logic here
+};
+
+export const increaseQuantity = (): ThunkAction<void, RootState, unknown, SetProductQuantity> => (
+  dispatch,
+  getState
+) => {
+  // Your logic here
+};
+
+*/

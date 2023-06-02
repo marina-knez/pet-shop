@@ -1,5 +1,5 @@
 import { CategoryItem } from "../categories/category.types";
-import { createAction, withMatcher, Action, ActionWithPayload } from "../../utilities/reducer/reducer.utilities";
+import { createAction, withMatcher, ActionWithPayload } from "../../utilities/reducer/reducer.utilities";
 import { CART_ACTION_TYPES, CartItem } from "./cart.types";
 
 export const addCartItem = (cartItems: CartItem[], productToAdd: CategoryItem): CartItem[] => {

@@ -1,6 +1,13 @@
 import { DotsContainer, Dot } from "./slider-dots.styles";
+import { HeroSliderData } from "../hero-section/hero-section.component";
 
-const SliderDots = ({ data, activeIndex, onDotClick }) => {
+type SliderDotsProps = {
+    data: HeroSliderData[];
+    activeIndex: number;
+    onDotClick: (index: number) => void;
+  };
+
+const SliderDots = ({ data, activeIndex, onDotClick }: SliderDotsProps) => {
     return (
         <DotsContainer>
             {

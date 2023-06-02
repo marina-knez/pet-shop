@@ -2,7 +2,15 @@ import { Fragment } from "react";
 
 import {  Badge, SliderItemTop, SliderItemBottom, SliderItemTextContainer, SliderItemTextTitle, SliderItemTextSubtitle } from './reviews-slider.styles';
 
-const ReviewsSlider = ({ data }) => {
+type ReviewsSliderProps = {
+    data: {
+      name: string;
+      title: string;
+      quote: string;
+    };
+  };
+
+const ReviewsSlider = ({ data }: ReviewsSliderProps) => {
     const { name, title, quote } = data;
     return (
         <Fragment>

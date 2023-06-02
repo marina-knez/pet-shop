@@ -2,7 +2,14 @@ import Slider from '../slider/slider.component';
 
 import { ReviewsSliderContainer, ReviewsSliderBody, ReviewsSliderBodyLeft, SliderBodyTextName, SliderBodyTextTitle, SliderBodyTextSubtitle } from './reviews-section.styles';
 
-export const reviews = [
+export type Review = {
+    id: number;
+    name: string;
+    title: string;
+    quote: string;
+  };
+
+export const reviews: Review[] = [
     {
         id: 1,
         name: "Slađana N.",
@@ -51,8 +58,7 @@ const ReviewsSection = () => {
                 <SliderBodyTextSubtitle>A few words and impressions from happy owners of even happier pets.</SliderBodyTextSubtitle>
             </ReviewsSliderBodyLeft>
             <ReviewsSliderBody>
-                <Slider data={reviews} hero={false} showDots={false} showArrows={true}>
-                </Slider>
+                <Slider data={reviews} hero={false} showDots={false} showArrows={true} />
             </ReviewsSliderBody>
         </ReviewsSliderContainer>
     )

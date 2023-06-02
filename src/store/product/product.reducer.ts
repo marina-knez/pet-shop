@@ -13,18 +13,20 @@ export const INITIAL_STATE: ProductItemState = {
   };
   
  export const productReducer = (state = INITIAL_STATE, action: AnyAction): ProductItemState => {
+  console.log('ACTION FIRED: ', action)
 
   if(setProductItem.match(action)) {
+    console.log('PAYLOAD: ', action.payload)
     return {
       ...state,
-      productItem: action.paload
+      productItem: action.payload
     };
   }
 
   if(setProductQuantity.match(action)){
     return {
       ...state,
-      quantity: action.paload
+      quantity: action.payload
     };
   }
 

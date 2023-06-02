@@ -9,7 +9,21 @@ import ReviewsSlider from '../reviews-slider/reviews-slider.component';
 import { HeroSliderItem } from '../hero-slider/hero-slider.styles';
 import { ReviewsSliderItem } from '../reviews-slider/reviews-slider.styles';
 
-const Slider = ({ data, hero, showDots, showArrows }) => {
+export type SliderProps = {
+    data: Array<any>;
+    hero: boolean;
+    showDots: boolean;
+    showArrows: boolean;
+};
+
+export type SliderItemProps = {
+    className: string;
+    key: any;
+    index: number;
+    data: any;
+};
+
+const Slider = ({ data, hero, showDots, showArrows }: SliderProps) => {
 
     const [ index, setIndex ] = useState(0);
 
@@ -59,7 +73,7 @@ const Slider = ({ data, hero, showDots, showArrows }) => {
                 }
 
                 return (
-                    <SliderItem className={position} key={item.id} index={item.index} data={item}>
+                    <SliderItem className={position} key={item.id}>
                         {
                             hero ?  <HeroSlider data={item} /> : <ReviewsSlider data={item} />
                         }

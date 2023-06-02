@@ -6,7 +6,17 @@ import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
 import {  SliderItemLeft, SliderItemRight, SliderItemTextTitle, SliderItemTextSubtitle, SliderItemImage } from './hero-slider.styles';
 
-const HeroSlider = ({ data }) => {
+type HeroSliderProps = {
+    data: {
+      title: string;
+      subtitle: string;
+      imageUrl: string;
+      imageTitle: string;
+      route: string;
+    };
+  };
+
+const HeroSlider = ({ data }: HeroSliderProps) => {
 
     const { title, subtitle, imageUrl, imageTitle, route } = data;
 

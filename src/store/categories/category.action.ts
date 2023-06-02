@@ -1,7 +1,7 @@
 import { createAction, Action, ActionWithPayload, withMatcher } from "../../utilities/reducer/reducer.utilities";
 import { CATEGORIES_ACTION_TYPES, Category } from "./category.types";
 import { getCategories } from '../../utilities/fetch-db/fetch-db.utilities';
-import { ThunkAction, ThunkDispatch } from 'redux-thunk';
+import { ThunkAction } from 'redux-thunk';
 import { RootState } from "../store";
 import { AnyAction } from "redux";
 
@@ -22,7 +22,7 @@ Promise<void>,
 RootState,
 unknown,
 AnyAction
-> => async (dispatch: ThunkDispatch<RootState, unknown, AnyAction>) => {
+> => async (dispatch) => {
     dispatch(fetchCategoriesStart());
 
     try {
