@@ -24,8 +24,6 @@ export const getProductToView = (id: number, category: string): ThunkAction<
   try {
     const categories = getState().categories.categories;
     const categoryData = categories.find((cat: Category) => cat.categoryName === category);
-    console.log('CATEGORIES: ', categories)
-    console.log('CATEGORY DATA: ', categoryData)
 
     if (!categoryData) {
       throw new Error(`Category '${category}' not found.`);
@@ -38,7 +36,6 @@ export const getProductToView = (id: number, category: string): ThunkAction<
     }
 
     dispatch(setProductItem(productData));
-    console.log(productData)
     dispatch(resetProductQuantity());
   } catch (error) {
     console.error(error);
@@ -52,7 +49,6 @@ export const setProductQuantity = withMatcher((quantity: Quantity): SetProductQu
 
 export const decreaseQuantity = (): ThunkAction<void, RootState, unknown, AnyAction> => (dispatch, getState) => {
   const quantity = getState().product.quantity;
-  console.log(quantity)
   if (quantity > 1) {
     dispatch(setProductQuantity(quantity - 1));
   }

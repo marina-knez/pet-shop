@@ -40,7 +40,6 @@ const ProductCard = ({ product, category }: ProductCardProps) => {
     const addProductToCart = () => dispatch(addItemToCart(cartItems, {...product, quantity: 1}));
 
     const handleProductClick = () => {
-        console.log('getProductToView called')
         dispatch(getProductToView(id, category));
     };
 
