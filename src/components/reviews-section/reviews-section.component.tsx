@@ -1,6 +1,6 @@
 import Slider from '../slider/slider.component';
 
-import { ReviewsSliderContainer, ReviewsSliderBody, ReviewsSliderBodyLeft, SliderBodyTextName, SliderBodyTextTitle, SliderBodyTextSubtitle } from './reviews-section.styles';
+import { ReviewsSliderContainer, ReviewsSliderBodyRight, ReviewsSliderBodyLeft, SliderBodyTextName, SliderBodyTextTitle, SliderBodyTextSubtitle } from './reviews-section.styles';
 
 export type Review = {
     id: number;
@@ -57,9 +57,9 @@ const ReviewsSection = () => {
                 <SliderBodyTextTitle>Satisfied people mean satisfied pets</SliderBodyTextTitle>
                 <SliderBodyTextSubtitle>A few words and impressions from happy owners of even happier pets.</SliderBodyTextSubtitle>
             </ReviewsSliderBodyLeft>
-            <ReviewsSliderBody>
+            <ReviewsSliderBodyRight>
                 <Slider data={reviews} hero={false} showDots={false} showArrows={true} />
-            </ReviewsSliderBody>
+            </ReviewsSliderBodyRight>
         </ReviewsSliderContainer>
     )
 }
