@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export const ArrowContainer = styled.div`
     position: absolute;
-    margin: 0 15px;
     z-index: 1;
     height: 3rem;
 `
 
 export const HeroArrowContainer = styled(ArrowContainer) `
-    width: 98%;
+    width: 100%;
     top: 50%;
 `
 

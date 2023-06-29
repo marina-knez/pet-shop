@@ -14,6 +14,10 @@ export const DotsContainer = styled.ul`
     align-items: center;
     margin-top: 1rem;
     list-style: none;
+
+    @media screen and (max-width: 768px) {
+        left: 30%;
+    }
 `;
 
 export const Dot = styled.li<DotProps>`
