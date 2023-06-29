@@ -20,8 +20,19 @@ export const PuppyGuideSectionLeft = styled.section`
     width: 50%;
     height: 80%;
 
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+        top: 0;
+        padding-left: 2rem;
+    }
+
     & p {
         text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.4rem;
+        }
     }
 `
 
@@ -29,17 +40,35 @@ export const PuppyGuideTitle = styled.h2`
     font-size: 3rem;
     font-weight: bold;
     padding: 1rem 0;
+
+    @media screen and (max-width: 768px) {
+            font-size: 3.5rem;
+        }
 `
 
 export const PuppyGuideSubtitle = styled.h3`
     font-size: 1.2rem;
     padding-bottom: 4rem;
+
+    @media screen and (max-width: 768px) {
+            font-size: 1.6rem;
+        }
 `
 
 export const PuppyGuideSectionRight = styled.section`
     position: absolute;
     right: 10rem;
     bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        right: 0;
+        width: 50%;
+        bottom: 70px;
+
+        & img {
+            width: 100%;
+        }
+    }
 `
 
 export const NavLink = styled(Link)`
