@@ -8,6 +8,12 @@ export const WidgetContainer = styled.div`
     justify-items: center;
     align-content: center;
     padding: 100px 25px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(4, 25%);
+        grid-gap: 1.5rem;
+    }
 `;
 
 export const WidgetItem = styled.section`
@@ -15,8 +21,17 @@ export const WidgetItem = styled.section`
     border-right: 1px solid lightgrey;
     width: 100%;
 
+    @media screen and (max-width: 768px) {
+        border-right: none;
+        border-bottom: 1px solid lightgrey;
+    }
+
     &:last-child {
         border-right: none;
+
+        @media screen and (max-width: 768px) {
+        border-bottom: none;
+    }
     }
 
     & span > svg {
