@@ -2,8 +2,12 @@ import styled from 'styled-components';
 
 export const DirectoryContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `

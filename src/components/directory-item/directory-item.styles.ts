@@ -6,10 +6,14 @@ export type BackgroundImageProps = {
 
 export const BackgroundImage = styled.div<BackgroundImageProps>`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-image: ${({imageUrl}) => `url(${imageUrl})`};
+
+  @media screen and (max-width: 768px) {
+      height: 35vh;
+  }
 `
 
 export const DirectoryItemBody = styled.section`
@@ -20,10 +24,14 @@ export const DirectoryItemBody = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //border: 1px solid black;
   background-color: white;
   opacity: 0.5;
   position: absolute;
+
+  @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 35vh;
+  }
 
   h2 {
     font-weight: bold;
@@ -52,12 +60,16 @@ export const DirectoryItemBody = styled.section`
 
 export const DirectoryItemContainer = styled.div`
   width: 20%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex: 1 1 auto;
-  //border: 1px solid black;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 35vh;
+  }
   
   &:hover {
     cursor: pointer;
