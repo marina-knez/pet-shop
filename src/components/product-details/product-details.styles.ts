@@ -9,15 +9,37 @@ export const ProductItemBasicsContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin: 50px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        margin: 20px;
+
+        & div {
+            & img {
+                height: 80%;
+                object-fit: cover;
+            }
+        }
+    }
 `
 
 export const ProductItemDetailsContainer = styled.div`
     margin: 50px;
     font-size: 1.1rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
 `
 
 export const ProductItemBasics = styled.div`
     margin: 0 50px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 20px;
+    }
 `
 
 export const ProductItemTitle = styled.h2`
@@ -27,6 +49,10 @@ export const ProductItemTitle = styled.h2`
 
 export const ProductItemInfo = styled.p`
     font-size: 1.1rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
 `
 
 export const ProductItemCartHandle = styled.div`
@@ -35,6 +61,11 @@ export const ProductItemCartHandle = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 20px;
+    }
 `
 
 export const ProductItemQuantity = styled.div`
@@ -45,6 +76,10 @@ export const ProductItemQuantity = styled.div`
     background-color: lightgrey;
     padding: 5px 10px;
     border-radius: .5rem;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 `
 
 export const ProductItemQuantityKeys = styled.span`
