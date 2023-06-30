@@ -4,13 +4,13 @@ export const ProductCardContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 450px;
+    //height: 450px;
     align-items: center;
     position: relative;
 
     img {
       width: 100%;
-      height: 80%;
+      height: 100%;
       object-fit: cover;
       margin-bottom: 5px;
     }
@@ -43,6 +43,10 @@ export const ProductCardInfo = styled.div`
     justify-content: center;
     align-items: flex-start;
     font-size: 18px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+    }
 `
 
 export const ProductCardTitle = styled.span`
