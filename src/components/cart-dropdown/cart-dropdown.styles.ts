@@ -13,6 +13,13 @@ export const CartDropdownContainer = styled.div`
   right: 40px;
   z-index: 5;
 
+  @media screen and (max-width: 768px) {
+    width: 350px;
+    height: 400px;
+    top: 100px;
+    right: 0;
+  }
+
     & .button {
       margin-top: auto;
     }
@@ -23,6 +30,10 @@ export const CartItems = styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+
+  @media screen and (max-width: 768px) {
+    height: 290px;
+  }
 `
 
 export const EmptyMessage = styled.span`

@@ -9,7 +9,7 @@ export const CartIconContainer = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         font-size: 1.5rem;
-        //left: 50px;
+        left: 50px;
         padding: 30px 15px 10px;
     }
 `
