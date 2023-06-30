@@ -22,6 +22,10 @@ export const ImageContainer = styled.div`
 
 export const ItemDetails = styled.span`
     width: 23%;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
 `
 
 export const ItemQuantity = styled(ItemDetails)`
@@ -40,8 +44,4 @@ export const RemoveButton = styled.span`
     padding-left: 12px;
     cursor: pointer;
 `
-  
-     /* .value {
-        margin: 0 10px;
-      }*/
   
