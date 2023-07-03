@@ -5,7 +5,8 @@ export const CartIconContainer = styled.div`
     cursor: pointer;
     position: relative;
     left: 0;
-    top: 8px;
+    transition: left .3s ease-in-out;
+    
 
     & .cart-icon {
         font-size: 1.5rem;
@@ -13,6 +14,7 @@ export const CartIconContainer = styled.div`
 
     @media screen and (max-width: 1024px) {
         left: 200px;
+        top: 8px;
     }
 
     @media screen and (max-width: 768px) {
@@ -20,6 +22,7 @@ export const CartIconContainer = styled.div`
         font-size: 1.5rem;
         left: 50px;
         padding: 30px 15px 10px;
+        top: 0;
     }
 `
 
