@@ -21,6 +21,11 @@ export const Preview = styled.div`
     row-gap: 50px;
     margin: 50px 50px;
 
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(4, 1fr);

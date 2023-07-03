@@ -44,7 +44,7 @@ export const ProductCardInfo = styled.div`
     align-items: flex-start;
     font-size: 18px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       font-size: 1.4rem;
     }
 `
