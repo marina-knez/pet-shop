@@ -82,6 +82,11 @@ export const NavLink = styled(Link)`
             position: absolute;
             bottom: 10px;
             left: 25px;
+
+            @media screen and (max-width: 1024px) {
+                width: 50%;
+                left: 5px;
+            }
         }
     }
 
