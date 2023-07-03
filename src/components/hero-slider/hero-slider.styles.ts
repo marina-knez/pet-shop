@@ -16,10 +16,14 @@ export const SliderItemLeft = styled.section`
     padding-left: 5rem;
     width: 40%;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         top: 5%;
-        padding-left: 3rem;
+        padding-left: 4rem;
         width: 60%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 3rem;
     }
 `
 

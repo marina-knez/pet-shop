@@ -15,6 +15,10 @@ export const DotsContainer = styled.ul`
     margin-top: 1rem;
     list-style: none;
 
+    @media screen and (max-width: 1024px) {
+        left: 40%;
+    }
+
     @media screen and (max-width: 768px) {
         left: 30%;
     }
