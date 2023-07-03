@@ -20,17 +20,23 @@ export const PuppyGuideSectionLeft = styled.section`
     width: 50%;
     height: 80%;
 
+    @media screen and (max-width: 1024px) {
+        width: 70%;
+        margin-left: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     @media screen and (max-width: 768px) {
         width: 100%;
         margin-left: 0;
         top: 0;
-        padding-left: 2rem;
     }
 
     & p {
         text-transform: uppercase;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             font-size: 1.4rem;
         }
     }
@@ -50,9 +56,15 @@ export const PuppyGuideSubtitle = styled.h3`
     font-size: 1.2rem;
     padding-bottom: 4rem;
 
+    @media screen and (max-width: 1024px) {
+        padding-right: 2rem;
+        font-size: 1.4rem;
+        padding-bottom: 2rem;
+    }
+
     @media screen and (max-width: 768px) {
-            font-size: 1.6rem;
-        }
+        font-size: 1.6rem;
+    }
 `
 
 export const PuppyGuideSectionRight = styled.section`
@@ -60,14 +72,17 @@ export const PuppyGuideSectionRight = styled.section`
     right: 10rem;
     bottom: 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         right: 0;
         width: 50%;
-        bottom: 70px;
 
         & img {
             width: 100%;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        bottom: 70px;
     }
 `
 
