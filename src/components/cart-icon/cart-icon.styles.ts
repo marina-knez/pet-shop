@@ -5,6 +5,15 @@ export const CartIconContainer = styled.div`
     cursor: pointer;
     position: relative;
     left: 0;
+    top: 8px;
+
+    & .cart-icon {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        left: 200px;
+    }
 
     @media screen and (max-width: 768px) {
         display: block;

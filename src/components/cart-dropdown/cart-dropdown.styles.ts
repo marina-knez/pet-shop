@@ -13,9 +13,9 @@ export const CartDropdownContainer = styled.div`
   right: 40px;
   z-index: 5;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     width: 350px;
-    height: 400px;
+    height: 500px;
     top: 100px;
     right: 0;
   }
@@ -31,8 +31,8 @@ export const CartItems = styled.div`
   flex-direction: column;
   overflow-y: scroll;
 
-  @media screen and (max-width: 768px) {
-    height: 290px;
+  @media screen and (max-width: 1024px) {
+    height: 440px;
   }
 `
 

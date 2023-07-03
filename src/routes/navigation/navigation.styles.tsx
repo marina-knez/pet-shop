@@ -31,7 +31,7 @@ export const NavLinks = styled.div`
     justify-content: flex-end;
     padding: 0 50px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         height: 350px;
         width: 50%;
         flex-direction: column;
@@ -48,7 +48,7 @@ export const NavLinks = styled.div`
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         height: 95vh;
         flex-direction: column;
         justify-content: flex-start;
@@ -85,7 +85,7 @@ export const NavLink = styled(Link)`
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         padding: 5px;
         font-size: 1.6rem;
     }
@@ -97,7 +97,7 @@ export const MenuIconContainer = styled.div`
     position: relative;
     display: none;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         display: block;
         font-size: 2rem;
     }
