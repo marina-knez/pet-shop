@@ -10,7 +10,7 @@ export const ProductItemBasicsContainer = styled.div`
     grid-gap: 20px;
     margin: 50px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(2, 1fr);
         justify-items: center;
@@ -29,7 +29,7 @@ export const ProductItemDetailsContainer = styled.div`
     margin: 50px;
     font-size: 1.1rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         font-size: 1.4rem;
     }
 `
@@ -37,7 +37,7 @@ export const ProductItemDetailsContainer = styled.div`
 export const ProductItemBasics = styled.div`
     margin: 0 50px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         margin: 0 20px;
     }
 `
@@ -50,7 +50,7 @@ export const ProductItemTitle = styled.h2`
 export const ProductItemInfo = styled.p`
     font-size: 1.1rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         font-size: 1.4rem;
     }
 `
@@ -61,6 +61,11 @@ export const ProductItemCartHandle = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
+    margin-top: 0;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
