@@ -9,6 +9,12 @@ export const WidgetContainer = styled.div`
     align-content: center;
     padding: 100px 25px;
 
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 1.5rem;
+    }
+
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(4, 25%);
@@ -20,6 +26,12 @@ export const WidgetItem = styled.section`
     text-align: center;
     border-right: 1px solid lightgrey;
     width: 100%;
+
+    @media screen and (max-width: 1024px) {
+        &:nth-child(even) {
+            border-right: none;
+        }
+    }
 
     @media screen and (max-width: 768px) {
         border-right: none;
