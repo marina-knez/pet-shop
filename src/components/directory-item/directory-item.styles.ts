@@ -11,7 +11,7 @@ export const BackgroundImage = styled.div<BackgroundImageProps>`
   background-position: center;
   background-image: ${({imageUrl}) => `url(${imageUrl})`};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
       height: 35vh;
   }
 `
@@ -28,7 +28,7 @@ export const DirectoryItemBody = styled.section`
   opacity: 0.5;
   position: absolute;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
       width: 100%;
       height: 35vh;
   }
@@ -66,7 +66,7 @@ export const DirectoryItemContainer = styled.div`
   flex: 1 1 auto;
   overflow: hidden;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
       width: 100%;
       height: 35vh;
   }
