@@ -9,14 +9,14 @@ export const ReviewsSliderItem = styled(SliderItem)`
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         width: 100%;
     }
 
     &.--active-slide {
         width: 50%;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             width: 100%;
         }
     }
@@ -49,7 +49,7 @@ export const SliderItemBottom = styled.section`
     padding-left: 1.9rem;
     padding-right: 2rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         width: 90%;
         font-size: 1.3rem;
     }

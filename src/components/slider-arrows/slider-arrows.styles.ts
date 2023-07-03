@@ -16,10 +16,14 @@ export const ReviewsArrowContainer = styled(ArrowContainer)`
     bottom: 5%;
     padding-left: 4.5rem;
 
-    @media screen and (max-width: 768px) {
-        left: 25%;
+    @media screen and (max-width: 1024px) {
+        left: 30%;
         width: 30%;
         bottom: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        left: 25%;
     }
 `
 

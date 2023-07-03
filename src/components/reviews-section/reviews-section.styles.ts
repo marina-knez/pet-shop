@@ -10,7 +10,7 @@ export const ReviewsSliderContainer = styled(SliderContainer)`
     justify-content: center;
     margin: 6rem 0;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         flex-direction: column;
         height: 100vh;
     }
@@ -25,7 +25,7 @@ export const ReviewsSliderBody = styled.div`
     align-items: flex-start;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         width: 100%;
     }
 `
@@ -35,14 +35,14 @@ export const ReviewsSliderBodyLeft = styled(ReviewsSliderBody)`
     padding-left: 6rem;
     z-index: 1;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         padding-left: 2rem;
     }
 `
 
 export const ReviewsSliderBodyRight = styled(ReviewsSliderBody)`
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         margin-top: 6rem;
         margin-bottom: 2rem;
     }
