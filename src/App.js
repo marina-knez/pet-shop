@@ -1,9 +1,12 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Spinner from './components/spinner/spinner.component';
 
-import {GlobalStyle} from '../src/global.style';
+import { GlobalStyle } from '../src/global.style';
+import Button, { BUTTON_TYPE_CLASSES } from './components/button/button.component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = lazy(() => import('./routes/navigation/navigation.component'));
 const Home = lazy(() => import('./routes/home/home.component'));
@@ -14,6 +17,27 @@ const Contact = lazy(() => import('./routes/contact/contact.component'));
 const Checkout = lazy(() => import('./routes/checkout/checkout.component'));
 
 const App = () => {
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <Suspense fallback={<Spinner />}>
@@ -28,6 +52,11 @@ const App = () => {
           <Route path='checkout' element={<Checkout />} />
         </Route>
       </Routes>
+      {showScrollToTop && 
+        <Button buttonType={BUTTON_TYPE_CLASSES.scroll} onClick={scrollToTop}>
+          <FontAwesomeIcon icon={faArrowUp} className='arrow-up'/>
+        </Button>
+      }
     </Suspense>
   );
 }

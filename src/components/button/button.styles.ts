@@ -43,3 +43,15 @@ export const BaseButtonLarge = styled(BaseButton)`
     padding: 10px 90px;
     font-size: 1.7rem;
 `
+
+export const BaseButtonScroll = styled.button`
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    margin-top: -5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(242, 234, 0);
+    cursor: pointer;
+`
