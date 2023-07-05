@@ -55,3 +55,7 @@ export const BaseButtonScroll = styled.button`
     background-color: rgb(242, 234, 0);
     cursor: pointer;
 `
+
+export const BaseButtonSend = styled(InvertedButton)`
+    width: 100%;
+`
