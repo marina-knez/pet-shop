@@ -7,6 +7,7 @@ import { GlobalStyle } from '../src/global.style';
 import Button, { BUTTON_TYPE_CLASSES } from './components/button/button.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import Success from './routes/success/success.component';
 
 const Navigation = lazy(() => import('./routes/navigation/navigation.component'));
 const Home = lazy(() => import('./routes/home/home.component'));
@@ -50,6 +51,7 @@ const App = () => {
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='checkout' element={<Checkout />} />
+          <Route path='success' element={<Success />} />
         </Route>
       </Routes>
       {showScrollToTop && 
