@@ -1,11 +1,18 @@
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
+import { useNavigate } from "react-router-dom";
+
 import { useFormik } from 'formik';
 import * as Yup from 'yup'
 
 import { ContactFormWrapper, Form, FormTitle, FormDescription, InputFieldsContainer, FormImageContainer, InputFieldContainer, Label, InputField, SelectField, Textarea, ButtonContainer } from './contact-form.styles';
 
 const ContactForm = () => {
+
+    const navigate = useNavigate();
+        const goToFormSuccessPage = () => {
+            navigate('/success')
+        };
 
     const formik = useFormik({
         initialValues: {
@@ -25,10 +32,28 @@ const ContactForm = () => {
                 .required("Message is required."),
         }),
 
-        onSubmit: (values) => {
-            // Handle form submission here
-            console.log(values);
-        },
+        onSubmit: async (values) => {
+            const postData = {
+              ...values
+            };
+      
+            try {
+              const response = await fetch('http://localhost:4000/messages', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(postData),
+              });
+
+              const createdEntry = await response.json();
+              localStorage.setItem('formData', JSON.stringify(createdEntry));
+              goToFormSuccessPage();
+      
+            } catch (error) {
+              console.error('Error:', error);
+            }
+          },
     });
 
     return (
