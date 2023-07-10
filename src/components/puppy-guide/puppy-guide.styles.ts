@@ -25,6 +25,7 @@ export const PuppyGuideSectionLeft = styled.section`
         margin-left: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
+        padding-top: 1rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -49,6 +50,7 @@ export const PuppyGuideTitle = styled.h2`
 
     @media screen and (max-width: 768px) {
             font-size: 3.5rem;
+            padding: 0.2rem 0;
         }
 `
 
