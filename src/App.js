@@ -7,7 +7,7 @@ import { GlobalStyle } from '../src/global.style';
 import Button, { BUTTON_TYPE_CLASSES } from './components/button/button.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import Success from './routes/success/success.component';
+import Footer from './components/footer/footer.component';
 
 const Navigation = lazy(() => import('./routes/navigation/navigation.component'));
 const Home = lazy(() => import('./routes/home/home.component'));
@@ -16,6 +16,7 @@ const Guide = lazy(() => import('./routes/guide/guide.component'));
 const About = lazy(() => import('./routes/about/about.component'));
 const Contact = lazy(() => import('./routes/contact/contact.component'));
 const Checkout = lazy(() => import('./routes/checkout/checkout.component'));
+const Success = lazy(() => import('./routes/success/success.component'));
 
 const App = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -54,6 +55,7 @@ const App = () => {
           <Route path='success' element={<Success />} />
         </Route>
       </Routes>
+      <Footer />
       {showScrollToTop && 
         <Button buttonType={BUTTON_TYPE_CLASSES.scroll} onClick={scrollToTop}>
           <FontAwesomeIcon icon={faArrowUp} className='arrow-up'/>
