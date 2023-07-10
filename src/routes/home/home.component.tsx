@@ -4,7 +4,6 @@ import HeroSection from '../../components/hero-section/hero-section.component';
 import Widget from '../../components/widget/widget.component';
 import ReviewsSection from '../../components/reviews-section/reviews-section.component';
 import PuppyGuide from '../../components/puppy-guide/puppy-guide.component';
-import Footer from '../../components/footer/footer.component';
 
 const Home = () => {
     return (
@@ -14,7 +13,6 @@ const Home = () => {
             <Directory />
             <ReviewsSection />
             <PuppyGuide />
-            <Footer />
         </Fragment>
     )
 }

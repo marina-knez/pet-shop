@@ -559,6 +559,13 @@
       "queryType": "Webshop",
       "message": "drgtzjujgnbgfvd",
       "id": 9
+    },
+    {
+      "name": "Simba",
+      "email": "simba3@gmail.com",
+      "queryType": "Other",
+      "message": "test test",
+      "id": 10
     }
   ]
 }

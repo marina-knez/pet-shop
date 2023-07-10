@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { AboutPageContainer, AboutPageTitle, AboutPageContent } from "./about.styles";
-import Footer from "../../components/footer/footer.component";
 
 const About = () => {
     return (
@@ -17,7 +16,6 @@ const About = () => {
                 <AboutPageContent>Yours,</AboutPageContent>
                 <AboutPageContent>Simba Pet Shop</AboutPageContent>
             </AboutPageContainer>
-            <Footer />
         </Fragment>
     )
 };

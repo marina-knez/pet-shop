@@ -10,9 +10,9 @@ import { ContactFormWrapper, Form, FormTitle, FormDescription, InputFieldsContai
 const ContactForm = () => {
 
     const navigate = useNavigate();
-        const goToFormSuccessPage = () => {
-            navigate('/success')
-        };
+    const goToFormSuccessPage = () => {
+        navigate('/success')
+    };
 
     const formik = useFormik({
         initialValues: {

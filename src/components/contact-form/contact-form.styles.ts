@@ -40,7 +40,7 @@ export const Form = styled.form`
     gap: 5rem;
 
     @media screen and (max-width: 1024px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 0;
     }
 `
@@ -124,6 +124,14 @@ export const ButtonContainer = styled.div`
 export const FormImageContainer = styled.div`
     flex: 1;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+        & img {
+        height: 250px;
+        width: 250px;
+        clip-path: circle(50% at 50% 50%);
+    }   
+    }
 `
 
 /*export const Picture = styled.picture`
