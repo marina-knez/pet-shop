@@ -32,10 +32,15 @@ export const NavLinks = styled.div`
     padding: 0 50px;
 
     @media screen and (max-width: 1024px) {
-        height: 350px;
-        width: 50%;
+        height: 85vh;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        padding: 25px 50px;
+        z-index: 1;
+        background-color: rgb(242, 240, 161);
+        position: absolute;
+        top: 100px;
+        width: 100%;
         gap: 20px;
         transition: right .3s;
 
@@ -44,21 +49,8 @@ export const NavLinks = styled.div`
         }
 
         &.navbar {
-            right: -50%;
+            right: -100%;
         }
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: 95vh;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 25px;
-        z-index: 1;
-        background-color: rgb(242, 240, 161);
-        position: absolute;
-        right: 0;
-        top: 100px;
     }
 `
 

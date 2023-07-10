@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-
 import { useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,8 +15,6 @@ import { ReactComponent as SimbaLogo } from '../../assets/logo/simba-logo.svg';
 
 import { NavigationContainer, LogoContainer, NavLinks, NavLink, MenuIconContainer } from './navigation.styles';
 
-
-
 const Navigation = () => {
     const  isCartOpen  = useSelector(selectIsCartOpen);
     const [ isMenuOpen, setIsMenuOpen ] = useState(false);
@@ -30,7 +27,7 @@ const Navigation = () => {
                 <LogoContainer to='/'>
                     <SimbaLogo className="logo" />
                 </LogoContainer>
-                <NavLinks className={isMenuOpen ? "active" : "navbar"}>
+                <NavLinks className={isMenuOpen ? "active" : "navbar"} >
                     <NavLink to='/shop'>SHOP</NavLink>
                     <NavLink to='/guide'>PUPPY GUIDE</NavLink>
                     <NavLink to='/about'>ABOUT US</NavLink>
