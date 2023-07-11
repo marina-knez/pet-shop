@@ -7,7 +7,7 @@ import { GlobalStyle } from '../src/global.style';
 import Button, { BUTTON_TYPE_CLASSES } from './components/button/button.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import Footer from './components/footer/footer.component';
+import Footer from './routes/footer/footer.component';
 
 const Navigation = lazy(() => import('./routes/navigation/navigation.component'));
 const Home = lazy(() => import('./routes/home/home.component'));
