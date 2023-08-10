@@ -61,24 +61,3 @@ export const increaseQuantity = (): ThunkAction<void, RootState, unknown, SetPro
 
 export const resetProductQuantity = withMatcher((): ResetProductQuantity =>
   createAction(PRODUCT_ACTION_TYPES.RESET_PRODUCT_QUANTITY));
-
-
-
- /* 
-
-
-export const decreaseQuantity = (): ThunkAction<void, RootState, unknown, SetProductQuantity> => (
-  dispatch,
-  getState
-) => {
-  // Your logic here
-};
-
-export const increaseQuantity = (): ThunkAction<void, RootState, unknown, SetProductQuantity> => (
-  dispatch,
-  getState
-) => {
-  // Your logic here
-};
-
-*/
