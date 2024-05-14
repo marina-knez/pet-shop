@@ -46,7 +46,7 @@ const CheckoutItem = ({cartItem}: { cartItem: CartItemData}) => {
                     <FontAwesomeIcon icon={faChevronRight} />
                 </span>
             </ItemQuantity>
-            <ItemDetails>{price}</ItemDetails>
+            <ItemDetails>{price} €</ItemDetails>
             <RemoveButton onClick={clearItemHandler}>
                 <FontAwesomeIcon icon={faXmark} />
             </RemoveButton>
