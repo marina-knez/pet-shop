@@ -13,6 +13,7 @@ export const INITIAL_STATE: ProductItemState = {
   };
   
  export const productReducer = (state = INITIAL_STATE, action: AnyAction): ProductItemState => {
+  console.log('productReducer action:', action); // Add this line for debugging
 
   if(setProductItem.match(action)) {
     return {

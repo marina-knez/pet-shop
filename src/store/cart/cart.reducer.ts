@@ -13,6 +13,7 @@ export const CART_INITIAL_STATE: CartState = {
 }
 
 export const cartReducer = (state = CART_INITIAL_STATE, action: AnyAction): CartState => {
+    console.log('cartReducer action:', action); // Add this line for debugging
 
     if(setCartItems.match(action)) {
         return {

@@ -15,13 +15,13 @@ const Shop = () => {
 
     useEffect(() => {
         dispatch(fetchCategoriesAsync());
-    }, []);
+    }, [dispatch]);
 
 
     return (
         <Routes>
             <Route index element={<CategoriesPreview />} />
-            <Route path=':category' element={<Category />}></Route>
+            <Route path=':category' element={<Category />} />
             <Route path='/:category/:id' element={<ProductDetails />} />
         </Routes>
     )

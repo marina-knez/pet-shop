@@ -1,9 +1,9 @@
 import { createAction, Action, ActionWithPayload, withMatcher } from "../../utilities/reducer/reducer.utilities";
 import { CATEGORIES_ACTION_TYPES, Category } from "./category.types";
-import { getCategories } from '../../utilities/fetch-db/fetch-db.utilities';
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from "../store";
 import { AnyAction } from "redux";
+import { getCategoriesAndDocuments } from "../../utilities/firebase/firebase.utilities";
 
 export type FetchCategoriesStart = Action<CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START>;
 
@@ -26,7 +26,7 @@ AnyAction
     dispatch(fetchCategoriesStart());
 
     try {
-        const categoriesData = await getCategories();
+        const categoriesData = await getCategoriesAndDocuments();
         dispatch(fetchCategoriesSuccess(categoriesData));
     } catch(error) {
         dispatch(fetchCategoriesFailed(error as Error));

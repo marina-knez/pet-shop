@@ -67,12 +67,16 @@ const ProductDetails = () => {
           </ProductItemCartHandle>
         </ProductItemBasics>
       </ProductItemBasicsContainer>
-      <ProductItemDetailsContainer>
-        <p><b>Ingredients:</b></p>
-        <p>{ingredients}</p>
-        <p><b>Content:</b></p>
-        <p>{content}</p>
-      </ProductItemDetailsContainer>
+      {
+        ingredients && content && (
+          <ProductItemDetailsContainer>
+            <p><b>Ingredients:</b></p>
+            <p>{ingredients}</p>
+            <p><b>Content:</b></p>
+            <p>{content}</p>
+          </ProductItemDetailsContainer>
+        )
+      }
     </ProductItemContainer>
   )
 }

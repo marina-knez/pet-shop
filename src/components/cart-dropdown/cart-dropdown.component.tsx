@@ -10,9 +10,11 @@ import { CartDropdownContainer, CartItems, EmptyMessage } from './cart-dropdown.
 
 const CartDropdown = () => {
     const cartItems = useSelector(selectCartItems);
+    
     const navigate = useNavigate();
     const goToCheckoutHandler = () => {
-        navigate('/checkout')
+        navigate('/checkout');
+
     };
 
     return (
